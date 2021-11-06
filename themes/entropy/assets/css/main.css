@@ -18,6 +18,7 @@ h6 {
   font-weight: 900;
   line-height: 1;
   color: var(--heading-font-color);
+  text-transform: uppercase;
 }
 
 a {
@@ -34,7 +35,8 @@ a:hover {
 }
 
 .header {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .header__inner {
@@ -59,6 +61,7 @@ a:hover {
 
 .nav__item {
   list-style: none;
+  margin: 0;
 }
 
 .nav__link {
@@ -70,8 +73,37 @@ a:hover {
   background-color: var(--dark-alt);
 }
 
+.footer__inner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
 .social {
   list-style: none;
+}
+
+.section {
+  width: 100%;
+}
+
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 2rem;
 }
 
 @media (min-width: 40.0rem) {
@@ -80,6 +112,13 @@ a:hover {
   }
 
   .header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__inner {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     flex-direction: row;
     justify-content: space-between;
   }
