@@ -2,23 +2,38 @@ baseURL = "https://tomkonidas.com/"
 languageCode = "en-us"
 title = "Tom Konidas"
 theme = "entropy"
+disableHugoGeneratorInject = true
+enableGitInfo = true
+enableRobotsTXT = true
 
 [author]
-name = "Tom Konidas"
-email = "tomkonidas@pm.me"
-twitter = "https://twitter.com/tomkonidas"
-github = "https://github.com/tomkonidas"
-linkedin = "https://www.linkedin.com/in/tomkonidas/"
-location = "Montréal"
+  name = "Tom Konidas"
+  email = "tomkonidas@pm.me"
+  twitter = "https://twitter.com/tomkonidas"
+  github = "https://github.com/tomkonidas"
+  linkedin = "https://www.linkedin.com/in/tomkonidas/"
+  biography = "some bio"
+  [author.location]
+    city = "Montréal"
+    region = "CA-QC"
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
 
 [menu]
-[[menu.main]]
-  identifier = "blog"
-  name = "blog"
-  url = "/blog"
-  weight = 1
-[[menu.main]]
-  identifier = "contact"
-  name = "contact"
-  url = "/contact"
-  weight = 2
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "/blog"
+    weight = 1
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    url = "/contact"
+    weight = 2
+
+[params]
+  description = "some description"
+  color = "#533FEB"

@@ -1,0 +1,51 @@
+<footer class="footer">
+  <div class="footer__inner container">
+    {{ if .Site.Author }}
+      <section class="section">
+        <div class="section__inner">
+          <div class="section__header">
+            <h3>{{ .Site.Author.name }}</h3>
+          </div>
+          <div class="section__content">
+            {{ .Site.Author.biography }}
+          </div>
+          <div class="section__footer">
+            <ul class="socials">
+              {{ with .Site.Author.github }}
+                <li class="social">
+                  <a href="{{ . }}" class="link" target="_blank" rel="noopener" aria-label="GitHub link">Github</a>
+                </li>
+              {{ end }}
+              {{ with .Site.Author.twitter }}
+                <li class="social">
+                  <a href="{{ . }}" class="link" target="_blank" rel="noopener" aria-label="Twitter link">Twitter</a>
+                </li>
+              {{ end }}
+              {{ with .Site.Author.linkedin }}
+                <li class="social">
+                  <a href="{{ . }}" class="link" target="_blank" rel="noopener" aria-label="LinkedIn link">LinkedIn</a>
+                </li>
+              {{ end }}
+              {{ with .OutputFormats.Get "rss" }}
+                <li class="social rss">
+                  <a href="{{ .Permalink }}" class="link" aria-label="RSS link">RSS</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    <section class="section">
+      <div class="section__inner">
+        <div class="section__header">
+          <h3>Explore Tags</h3>
+        </div>
+        <div class="section__content">
+          <div class="tags"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>

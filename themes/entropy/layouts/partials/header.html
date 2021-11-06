@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="header__inner container">
+    <div class="logo">
+      <a class="logo__link" href="/" aria-label="Home">{{ .Site.Title }}</a>
+    </div>
+    <nav class="nav">
+      <ul class="nav__inner">
+        {{ range .Site.Menus.main }}
+          <li class="nav__item">
+            <a class="nav__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
