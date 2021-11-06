@@ -1,4 +1,12 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'entropy'
+baseURL = "https://tomkonidas.com/"
+languageCode = "en-us"
+title = "Tom Konidas"
+theme = "entropy"
+
+[author]
+name = "Tom Konidas"
+email = "tomkonidas@pm.me"
+twitter = "https://twitter.com/tomkonidas"
+github = "https://github.com/tomkonidas"
+linkedin = "https://www.linkedin.com/in/tomkonidas/"
+location = "Montréal"
