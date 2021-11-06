@@ -10,3 +10,15 @@ twitter = "https://twitter.com/tomkonidas"
 github = "https://github.com/tomkonidas"
 linkedin = "https://www.linkedin.com/in/tomkonidas/"
 location = "Montréal"
+
+[menu]
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  url = "/blog"
+  weight = 1
+[[menu.main]]
+  identifier = "contact"
+  name = "contact"
+  url = "/contact"
+  weight = 2
