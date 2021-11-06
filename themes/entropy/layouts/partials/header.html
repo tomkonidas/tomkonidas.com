@@ -10,6 +10,11 @@
             <a class="nav__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
           </li>
         {{ end }}
+        {{ with .OutputFormats.Get "rss" }}
+          <li class="nav__item rss">
+            <a href="{{ .Permalink }}" class="nav__link" aria-label="RSS link">RSS</a>
+          </li>
+        {{ end }}
       </ul>
     </nav>
   </div>

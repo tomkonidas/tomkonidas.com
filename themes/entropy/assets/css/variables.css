@@ -1,4 +1,13 @@
 :root {
   --brand: #533FEB;
-  --brand-secondary: #333;
+  --dark: #0c101a;
+  --dark-alt: #080b12;
+  --light-gray: #f0f0f0;
+  --background-color: var(--dark);
+  --text-color: #aaaaaa;
+  --heading-font-color: var(--light-gray);
+  --link-color: #ffffff;
+  --link-color-hover: var(--brand);
+  --main-font: Roboto;
+  --brand-font: Roboto;
 }

@@ -1,4 +1,86 @@
 ::selection {
   background: var(--brand);
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--brand-font),Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--heading-font-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+.rss {
+  display: none;
+}
+
+.header {
+  padding: 4rem 0;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo__link {
+  font-family: var(--brand-font),Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.nav__inner {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: var(--dark-alt);
+}
+
+.social {
+  list-style: none;
+}
+
+@media (min-width: 40.0rem) {
+  .rss {
+    display: initial;
+  }
+
+  .header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

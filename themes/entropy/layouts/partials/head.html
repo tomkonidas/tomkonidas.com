@@ -23,8 +23,10 @@
 
 {{ $styles :=
     slice
-      (resources.Get "css/normalize.css")
+      (resources.Get "css/fonts.css")
       (resources.Get "css/variables.css")
+      (resources.Get "css/normalize.css")
+      (resources.Get "css/milligram.css")
       (resources.Get "css/main.css")
     | resources.Concat "main.css"
 }}
