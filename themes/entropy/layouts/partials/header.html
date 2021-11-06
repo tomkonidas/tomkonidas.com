@@ -12,7 +12,7 @@
         {{ end }}
         {{ with .OutputFormats.Get "rss" }}
           <li class="nav__item rss">
-            <a href="{{ .Permalink }}" class="nav__link" aria-label="RSS link">RSS</a>
+            <a href="{{ .Permalink }}" target="_blank" class="nav__link" aria-label="RSS link">RSS</a>
           </li>
         {{ end }}
       </ul>
