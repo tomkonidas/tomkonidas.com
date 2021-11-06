@@ -37,15 +37,26 @@
       </section>
     {{ end }}
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section__header">
-          <h3 class="section__title">Explore Tags</h3>
+    {{ if .Site.Taxonomies.tags }}
+      <section class="section">
+        <div class="section__inner">
+          <div class="section__header">
+            <h3 class="section__title">Explore Tags</h3>
+          </div>
+          <div class="section__content">
+            <div class="tags">
+              {{ range .Site.Taxonomies.tags }}
+                <a class="link pill" href="{{ .Page.Permalink }}">
+                  <div class="pill__inner">
+                    <div class="pill__title">{{ .Page.Title }}</div>
+                    <div class="tag-count">{{ .Count }}</div>
+                  </div>
+                </a>
+              {{ end }}
+            </div>
+          </div>
         </div>
-        <div class="section__content">
-          <div class="tags"></div>
-        </div>
-      </div>
-    </section>
+      </section>
+    {{ end }}
   </div>
 </footer>

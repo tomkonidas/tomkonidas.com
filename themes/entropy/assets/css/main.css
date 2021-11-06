@@ -106,6 +106,38 @@ a:hover {
   font-size: 2rem;
 }
 
+.tags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 6px 12px;
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+}
+
+.pill:hover {
+  border: 2px solid var(--brand);
+}
+
+.pill__inner {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.pill__title {
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-size: 1.25rem;
+}
+
+.tag-count {
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
 @media (min-width: 40.0rem) {
   .rss {
     display: initial;

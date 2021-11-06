@@ -5,6 +5,7 @@
   --light-gray: #f0f0f0;
   --background-color: var(--dark);
   --text-color: #aaaaaa;
+  --border-color: #222;
   --heading-font-color: var(--light-gray);
   --link-color: #ffffff;
   --link-color-hover: var(--brand);
