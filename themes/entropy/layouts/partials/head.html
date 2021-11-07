@@ -6,6 +6,8 @@
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">{{ with .Site.Params.color }}
 <meta name="theme-color" content="{{ . }}">{{ end }}
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
 
 <!-- Geo tags -->
 {{ with .Site.Author.location }}
