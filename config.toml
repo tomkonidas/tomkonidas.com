@@ -9,9 +9,18 @@ enableRobotsTXT = true
 [author]
   name = "Tom Konidas"
   email = "tomkonidas@pm.me"
-  twitter = "https://twitter.com/tomkonidas"
-  github = "https://github.com/tomkonidas"
-  linkedin = "https://www.linkedin.com/in/tomkonidas/"
+  [[author.socials]]
+    name = "Twitter"
+    url = "https://twitter.com/tomkonidas"
+  [[author.socials]]
+    name = "GitHub"
+    url = "https://github.com/tomkonidas"
+  [[author.socials]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/tomkonidas/"
+  [[author.socials]]
+    name = "SoundCloud"
+    url = "https://soundcloud.com/tomkonidas"
   biography = "some bio"
   [author.location]
     city = "Montréal"

@@ -11,19 +11,9 @@
           </div>
           <div class="section__footer">
             <ul class="socials">
-              {{ with .Site.Author.github }}
+              {{ range .Site.Author.socials }}
                 <li class="social">
-                  <a href="{{ . }}" class="link" target="_blank" rel="noopener" aria-label="GitHub link">Github</a>
-                </li>
-              {{ end }}
-              {{ with .Site.Author.twitter }}
-                <li class="social">
-                  <a href="{{ . }}" class="link" target="_blank" rel="noopener" aria-label="Twitter link">Twitter</a>
-                </li>
-              {{ end }}
-              {{ with .Site.Author.linkedin }}
-                <li class="social">
-                  <a href="{{ . }}" class="link" target="_blank" rel="noopener" aria-label="LinkedIn link">LinkedIn</a>
+                  <a href="{{ .url }}" class="link" target="_blank" rel="noopener" aria-label="{{ .name }} link">{{ .name }}</a>
                 </li>
               {{ end }}
               {{ with .OutputFormats.Get "rss" }}
