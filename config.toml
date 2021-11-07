@@ -9,6 +9,7 @@ enableRobotsTXT = true
 [author]
   name = "Tom Konidas"
   email = "tomkonidas@pm.me"
+  biography = "some bio"
   [[author.socials]]
     name = "Twitter"
     url = "https://twitter.com/tomkonidas"
@@ -21,7 +22,6 @@ enableRobotsTXT = true
   [[author.socials]]
     name = "SoundCloud"
     url = "https://soundcloud.com/tomkonidas"
-  biography = "some bio"
   [author.location]
     city = "Montréal"
     region = "CA-QC"
