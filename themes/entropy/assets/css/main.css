@@ -145,6 +145,10 @@ a:hover {
 }
 
 @media (min-width: 40.0rem) {
+  .content {
+    padding-bottom: 8rem;
+  }
+
   .rss {
     display: initial;
   }
@@ -155,8 +159,8 @@ a:hover {
   }
 
   .footer__inner {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     flex-direction: row;
     justify-content: space-between;
   }
