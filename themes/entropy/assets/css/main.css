@@ -30,6 +30,11 @@ a:hover {
   color: var(--link-color-hover);
 }
 
+.content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .rss {
   display: none;
 }
