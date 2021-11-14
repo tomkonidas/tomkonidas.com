@@ -30,6 +30,12 @@ a:hover {
   color: var(--link-color-hover);
 }
 
+code {
+  font-family: var(--code-font),"Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  background: var(--code-background);
+  color: var(--code-foreground);
+}
+
 .content {
   padding-top: 2rem;
   padding-bottom: 4rem;
