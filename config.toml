@@ -6,6 +6,10 @@ disableHugoGeneratorInject = true
 enableGitInfo = true
 enableRobotsTXT = true
 
+[markup]
+  [markup.highlight]
+    theme = 'dracula'
+
 [author]
   name = "Tom Konidas"
   email = "tomkonidas@pm.me"
