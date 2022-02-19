@@ -13,4 +13,11 @@
       </ul>
     </nav>
   </div>
+  <div class="pwd container">
+    {{ if eq .Page.RelPermalink "/" }}
+      <div class="current-dir">iex(1)> Blog.list_articles(:latest)</div>
+    {{ else }}
+      <div class="current-dir">iex(2)> Blog.list_articles(tags: [:{{ .Title }}])</div>
+    {{ end }}
+  </div>
 </header>
