@@ -18,13 +18,18 @@
                   <a href="{{ .url }}" class="link" target="_blank" rel="noopener" aria-label="{{ .name }} link">{{ .name }}</a>
                 </li>
               {{ end }}
+            </ul>
+            <ul class="socials">
               {{ with .Site.GetPage "/" }}
                 {{ with .OutputFormats.Get "rss" }}
                   <li class="social">
-                    <a href="{{ .Permalink }}" target="_blank" class="link"  rel="noopener" aria-label="RSS link">RSS</a>
+                    <a href="{{ .Permalink }}" class="link" aria-label="RSS link" download>RSS</a>
                   </li>
                 {{ end }}
               {{ end }}
+              <li class="social">
+                <a href="/30AF460F.asc" class="link" aria-label="GPG Key" download>GPG</a>
+              </li>
             </ul>
           </div>
         </div>
