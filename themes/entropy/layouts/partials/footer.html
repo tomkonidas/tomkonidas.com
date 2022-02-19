@@ -18,10 +18,12 @@
                   <a href="{{ .url }}" class="link" target="_blank" rel="noopener" aria-label="{{ .name }} link">{{ .name }}</a>
                 </li>
               {{ end }}
-              {{ with .OutputFormats.Get "rss" }}
-                <li class="social">
-                  <a href="{{ .Permalink }}" target="_blank" class="link"  rel="noopener" aria-label="RSS link">RSS</a>
-                </li>
+              {{ with .Site.GetPage "/" }}
+                {{ with .OutputFormats.Get "rss" }}
+                  <li class="social">
+                    <a href="{{ .Permalink }}" target="_blank" class="link"  rel="noopener" aria-label="RSS link">RSS</a>
+                  </li>
+                {{ end }}
               {{ end }}
             </ul>
           </div>
