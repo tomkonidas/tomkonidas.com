@@ -6,9 +6,11 @@
           <div class="section__header">
             <h3 class="section__title">{{ .Site.Author.name }}</h3>
           </div>
-          <div class="section__content">
-            {{ .Site.Author.biography }}
-          </div>
+          {{ with .Site.Author.biography }}
+            <div class="section__content">
+              {{ . }}
+            </div>
+          {{ end }}
           <div class="section__footer">
             <ul class="socials">
               {{ range .Site.Author.socials }}
