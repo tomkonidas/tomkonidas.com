@@ -14,10 +14,12 @@
     </nav>
   </div>
   <div class="pwd container">
-    {{ if eq .Page.RelPermalink "/" }}
+    {{ if .IsHome }}
       <div class="current-dir">iex(1)> Blog.list_articles(:latest)</div>
+    {{ else if eq .Kind "page" }}
+      <div class="current-dir">iex(2)> Blog.get_article("{{ .File.BaseFileName }}")</div>
     {{ else }}
-      <div class="current-dir">iex(2)> Blog.list_articles(tags: [:{{ .Title }}])</div>
+      <div class="current-dir">iex(3)> Blog.list_articles(tags: [:{{ .Title }}])</div>
     {{ end }}
   </div>
 </header>
