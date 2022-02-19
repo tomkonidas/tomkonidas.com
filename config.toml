@@ -39,7 +39,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "/blog"
+    url = "/"
     weight = 1
   [[menu.main]]
     identifier = "uses"
