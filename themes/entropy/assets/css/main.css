@@ -6,6 +6,9 @@
 body {
   color: var(--text-color);
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -39,6 +42,11 @@ code {
 .content {
   padding-top: 2rem;
   padding-bottom: 4rem;
+  flex-grow: 1;
+}
+
+.current-dir {
+  font-family: monospace;
 }
 
 .rss {
