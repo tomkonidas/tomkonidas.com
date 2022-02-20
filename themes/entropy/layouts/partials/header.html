@@ -16,10 +16,12 @@
   <div class="pwd container">
     {{ if .IsHome }}
       <div class="current-dir">iex(1)> Blog.list_articles(:latest)</div>
-    {{ else if eq .Kind "page" }}
+    {{ else if eq .Type "posts" }}
       <div class="current-dir">iex(2)> Blog.get_article("{{ .File.BaseFileName }}")</div>
-    {{ else }}
+    {{ else if eq .Kind "term" }}
       <div class="current-dir">iex(3)> Blog.list_articles(tags: [:{{ .Title }}])</div>
+    {{ else }}
+      <div class="current-dir">iex(4)> TomKonidas.{{ lower .Title }}()</div>
     {{ end }}
   </div>
 </header>
