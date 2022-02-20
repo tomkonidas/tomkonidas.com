@@ -16,7 +16,7 @@
   <div class="pwd container">
     {{ if .IsHome }}
       <div class="current-dir">iex(1)> TomKonidas.list_articles(:latest)</div>
-    {{ else if eq .Type "posts" }}
+    {{ else if eq .Type "post" }}
       <div class="current-dir">iex(2)> TomKonidas.get_article("{{ .File.BaseFileName }}")</div>
     {{ else if eq .Kind "term" }}
       <div class="current-dir">iex(3)> TomKonidas.list_articles(tags: [:{{ .Title }}])</div>

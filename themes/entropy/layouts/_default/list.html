@@ -2,7 +2,7 @@
   <main class="container">
     {{ .Content }}
     <div class="list-items">
-      {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+      {{ $paginator := .Paginate (where .Pages "Type" "post") }}
       {{ range $paginator.Pages }}
         {{ partial "blog_post_list_item.html" . }}
       {{ end }}
