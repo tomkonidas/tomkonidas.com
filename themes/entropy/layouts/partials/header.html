@@ -21,7 +21,7 @@
     {{ else if eq .Kind "term" }}
       <div class="current-dir">iex(3)> Blog.list_articles(tags: [:{{ .Title }}])</div>
     {{ else }}
-      <div class="current-dir">iex(4)> TomKonidas.{{ lower .Title }}()</div>
+      <div class="current-dir">iex(4)> TomKonidas.{{ replace (lower .Title) " " "_" }}()</div>
     {{ end }}
   </div>
 </header>
