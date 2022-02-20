@@ -1,6 +1,11 @@
 {{ define "main" }}
   <main class="container">
-    <h1>{{ .Title | markdownify }}</h1>
+    <div class="article-header">
+      <h1 class="article-header__title">{{ .Title | markdownify }}</h1>
+      <div class="article-header__datetime">
+        <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate | time.Format ":date_long" }}</time>
+      </div>
+    </div>
     {{ .Content }}
     {{ partial "page_tags.html" . }}
   </main>

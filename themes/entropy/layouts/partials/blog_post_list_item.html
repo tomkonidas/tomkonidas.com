@@ -1,9 +1,9 @@
 <article class="list-items__item">
   <div class="list-item__header">
-    <h1 class="list-item__title">
+    <h1 class="article-header__title">
       <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </h1>
-    <div class="list-item__datetime">
+    <div class="article-header__datetime">
       <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate | time.Format ":date_long" }}</time>
     </div>
   </div>

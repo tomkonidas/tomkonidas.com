@@ -45,6 +45,15 @@ code {
   flex-grow: 1;
 }
 
+.article-header__title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.article-header__datetime {
+  margin-bottom: 1.5rem;
+}
+
 .current-dir {
   font-family: monospace;
 }
@@ -167,11 +176,6 @@ code {
 
 .list-item__header {
   margin-bottom: 1.5rem;
-}
-
-.list-item__title {
-  font-size: 3rem;
-  margin-bottom: 0;
 }
 
 .list-item__summmary {
