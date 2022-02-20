@@ -1,0 +1,22 @@
+<article class="list-items__item">
+  <div class="list-item__header">
+    <h1 class="list-item__title">
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
+    <div class="list-item__datetime">
+      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate | time.Format ":date_long" }}</time>
+    </div>
+  </div>
+  <p class="list-item__summmary">{{ .Summary | markdownify }}</p>
+  <div class="list-item__tags">
+    <code>
+      {{ $amountOfTags := len .Params.tags }}
+      [{{- range $index, $tag := .Params.tags -}}
+        {{- with $.Site.GetPage (printf "/%s" $tag) -}}
+        <a href="{{ .RelPermalink }}">:{{ $tag }}</a>
+        {{- if not (eq (add $index 1) $amountOfTags) -}},&nbsp;{{- end -}}
+        {{- end -}}
+      {{- end -}}]
+    </code>
+  </div>
+</article>

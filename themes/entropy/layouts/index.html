@@ -1,5 +1,10 @@
 {{ define "main" }}
   <main class="container">
     {{ .Content }}
+    <div class="list-items">
+      {{ range .Paginator.Pages }}
+        {{ partial "blog_post_list_item.html" . }}
+      {{ end }}
+    </div>
   </main>
 {{ end }}

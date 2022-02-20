@@ -3,9 +3,6 @@ title: Markdown
 draft: true
 tags: ["milligram", "blog", "elixir", "hugo", "golang", "netlify"]
 ---
-Markdown
-===========
-
 I am a paragraph in markdown with line
 wrapping so fit in this width.
 I am a continuation of the first paragraph

@@ -162,15 +162,20 @@ code {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  row-gap: 4rem;
+  row-gap: 6rem;
 }
 
-.list-items__header {
+.list-item__header {
   margin-bottom: 1.5rem;
 }
 
-.list-items__title {
+.list-item__title {
+  font-size: 3rem;
   margin-bottom: 0;
+}
+
+.list-item__summmary {
+  margin-bottom: 0.5rem;
 }
 
 .pwd {
