@@ -1,8 +1,9 @@
 {{ $description := (default .Site.Params.description .Page.Description) }}
+{{ $kind := .Kind }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{{ with .Params.Title }}{{ . }} |> {{ end }}{{ .Site.Title }}</title>
+<title>{{ with .Params.Title }}{{ if eq $kind "term" }}{{ humanize . }}{{ else }}{{ . }}{{ end}} |> {{ end }}{{ .Site.Title }}</title>
 <meta name="description" content="{{ $description }}">{{ with .Site.Params.color }}
 <meta name="theme-color" content="{{ . }}">{{ end }}
 <meta name="robots" content="index,follow">
