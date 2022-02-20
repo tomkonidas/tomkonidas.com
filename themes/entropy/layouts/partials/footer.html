@@ -45,12 +45,7 @@
           <div class="section__content">
             <div class="tags">
               {{ range .Site.Taxonomies.tags }}
-                <a class="link pill" href="{{ .Page.Permalink }}">
-                  <div class="pill__inner">
-                    <div class="pill__title">{{ .Page.Title }}</div>
-                    <div class="tag-count">{{ .Count }}</div>
-                  </div>
-                </a>
+                {{ partial "tag.html" . }}
               {{ end }}
             </div>
           </div>
