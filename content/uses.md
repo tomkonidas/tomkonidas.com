@@ -68,8 +68,8 @@ I try to keep this list up to date as much as possible. If there is something yo
 
 ### Camera
 
-* Sony A7Sii
+* Sony A7iv
 * Sony FE 16-35mm F2.8 GM
 * Sony FE 85 mm F1.4 GM
-* DJI Ronin-SC
+* DJI Ronin-SC Pro
 * Tascam DR-10L
