@@ -120,6 +120,11 @@ code {
   list-style: none;
 }
 
+.finger-print {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
 .section {
   width: 100%;
 }
