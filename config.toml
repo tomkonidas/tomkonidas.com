@@ -52,6 +52,11 @@ enableRobotsTXT = true
     name = "Uses"
     url = "/uses"
     weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 3
 
 [params]
   description = "BEAM focused software developer from Montréal"

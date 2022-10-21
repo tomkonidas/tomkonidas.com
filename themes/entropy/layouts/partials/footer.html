@@ -30,6 +30,11 @@
                   <a href="{{ .RelPermalink }}" class="link" aria-label="{{ .Name }}">{{ .Name }}</a>
                 </li>
               {{ end }}
+              {{ with .Site.GetPage "/about" }}
+                <li class="social">
+                  <a href="{{ .RelPermalink }}" class="link" aria-label="{{ .Name }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
               {{ with .Site.GetPage "/" }}
                 {{ with .OutputFormats.Get "rss" }}
                   <li class="social">

@@ -39,6 +39,29 @@ code {
   color: var(--code-foreground);
 }
 
+figure {
+  margin: 0;
+}
+
+#about-me {
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+}
+
+.author > img {
+  object-fit: contain;
+}
+
 .content {
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -111,7 +134,7 @@ code {
 
 .socials {
   display: flex;
-  gap: 1rem;
+  gap: 0 1rem;
   margin: 0;
   flex-wrap: wrap;
 }
@@ -192,6 +215,14 @@ code {
 }
 
 @media (min-width: 40.0rem) {
+  #about-me {
+    text-align: start;
+  }
+
+  .about {
+    flex-direction: row;
+  }
+
   .content {
     padding-bottom: 8rem;
   }
