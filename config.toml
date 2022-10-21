@@ -54,5 +54,5 @@ enableRobotsTXT = true
     weight = 2
 
 [params]
-  description = "some description"
+  description = "BEAM focused software developer from Montréal"
   color = "#533FEB"
