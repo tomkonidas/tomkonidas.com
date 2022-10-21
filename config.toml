@@ -29,6 +29,9 @@ enableRobotsTXT = true
   [[author.socials]]
     name = "SoundCloud"
     url = "https://soundcloud.com/tomkonidas"
+  [[author.socials]]
+    name = "Elixir Forum"
+    url = "https://elixirforum.com/u/tomkonidas"
   [author.location]
     city = "Montréal"
     region = "CA-QC"
