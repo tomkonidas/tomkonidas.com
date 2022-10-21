@@ -19,7 +19,7 @@
 To start your server
 
 ```bash
-hugo server
+hugo server --buildDrafts
 ```
 
 ## Contact
