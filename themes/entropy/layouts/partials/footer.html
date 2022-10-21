@@ -25,11 +25,6 @@
                   <a href="{{ .RelPermalink }}" class="link" aria-label="Blog">Blog</a>
                 </li>
               {{ end }}
-              {{ with .Site.GetPage "/uses" }}
-                <li class="social">
-                  <a href="{{ .RelPermalink }}" class="link" aria-label="{{ .Name }}">{{ .Name }}</a>
-                </li>
-              {{ end }}
               {{ with .Site.GetPage "/about" }}
                 <li class="social">
                   <a href="{{ .RelPermalink }}" class="link" aria-label="{{ .Name }}">{{ .Name }}</a>
