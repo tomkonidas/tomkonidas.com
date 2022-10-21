@@ -10,6 +10,9 @@ enableRobotsTXT = true
   [markup.highlight]
     theme = 'dracula'
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [author]
   name = "Tom Konidas"
   email = "tomkonidas@pm.me"
