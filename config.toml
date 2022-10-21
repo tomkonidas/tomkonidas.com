@@ -15,7 +15,7 @@ enableRobotsTXT = true
 
 [author]
   name = "Tom Konidas"
-  email = "tomkonidas@pm.me"
+  email = "tom@tomkonidas.com"
   biography = ""
   [[author.socials]]
     name = "Twitter"

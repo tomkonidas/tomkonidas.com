@@ -37,6 +37,11 @@
                   </li>
                 {{ end }}
               {{ end }}
+              {{ with .Site.Author.email }}
+                <li class="social">
+                  <a href="mailto:{{ . }}" class="link" rel="noopener" aria-label="Email">Email</a>
+                </li>
+              {{ end }}
               <li class="social">
                 <a href="/30AF460F.asc" class="link" aria-label="PGP Key" download>PGP</a>
               </li>
