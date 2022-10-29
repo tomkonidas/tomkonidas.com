@@ -52,7 +52,7 @@ summaryLength = 42
     identifier = "about"
     name = "About"
     url = "/about"
-    weight = 3
+    weight = 2
 
 [params]
   description = "BEAM focused software developer from Montréal"
