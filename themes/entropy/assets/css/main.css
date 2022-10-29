@@ -56,10 +56,12 @@ figure {
 .author {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .author > img {
   object-fit: contain;
+  min-width: 200px;
 }
 
 .content {

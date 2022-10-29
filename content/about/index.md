@@ -18,8 +18,11 @@ Hi there 👋
 
 My name is Tom Konidas and I am a [BEAM](https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)) focused software developer from Montréal.
 
-I currently specialize in [Elixir](https://elixir-lang.org/), [Phoenix](https://www.phoenixframework.org/) and [Nerves](https://www.nerves-project.org/) applications.
-Outside of playing around with cool new tech, you can catch me making music, shooting videos and taking rad pictures.
+I solve software problems with real-time distributed systems, currently
+specializing in [Elixir](https://elixir-lang.org/), [Phoenix](https://www.phoenixframework.org/) and
+[Nerves](https://www.nerves-project.org/) applications. Outside of playing
+around with cool new tech, you can catch me making music, shooting videos and
+taking rad pictures.
 
 </div>
 </div>
