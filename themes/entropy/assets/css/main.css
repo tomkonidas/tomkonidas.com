@@ -35,6 +35,8 @@ a:hover {
 
 code {
   font-family: var(--code-font),"Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  background: var(--code-background);
+  color: var(--code-foreground);
 }
 
 figure {
