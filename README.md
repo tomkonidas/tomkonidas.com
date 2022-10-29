@@ -12,6 +12,8 @@
   <a href="https://github.com/tomkonidas?tab=followers">
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/tomkonidas?label=Followers&style=plastic&color=1688f0">
   </a>
+
+   [![Netlify Status](https://api.netlify.com/api/v1/badges/08854d00-6592-4929-93cc-7b9e1f877511/deploy-status)](https://app.netlify.com/sites/tomkonidas/deploys)
 </div>
 
 ## Dev Setup
