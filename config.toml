@@ -5,6 +5,7 @@ theme = "entropy"
 disableHugoGeneratorInject = true
 enableGitInfo = true
 enableRobotsTXT = true
+summaryLength = 42
 
 [markup]
   [markup.highlight]
