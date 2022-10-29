@@ -7,10 +7,6 @@ enableGitInfo = true
 enableRobotsTXT = true
 summaryLength = 42
 
-[markup]
-  [markup.highlight]
-    theme = 'dracula'
-
 [markup.goldmark.renderer]
   unsafe= true
 
