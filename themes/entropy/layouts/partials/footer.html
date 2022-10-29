@@ -33,7 +33,7 @@
               {{ with .Site.GetPage "/" }}
                 {{ with .OutputFormats.Get "rss" }}
                   <li class="social">
-                    <a href="{{ .Permalink }}" class="link" aria-label="RSS link" download>RSS</a>
+                    <a href="{{ .RelPermalink }}" class="link" aria-label="RSS link" download>RSS</a>
                   </li>
                 {{ end }}
               {{ end }}
