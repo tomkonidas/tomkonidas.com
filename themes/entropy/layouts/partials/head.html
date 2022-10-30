@@ -1,9 +1,11 @@
 {{ $description := (default .Site.Params.description .Page.Description) }}
 {{ $kind := .Kind }}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>{{ with .Params.Title }}{{ if eq $kind "term" }}{{ humanize . }}{{ else }}{{ . }}{{ end}} |> {{ end }}{{ .Site.Title }}</title>
+<meta name="title" content="{{ .Site.Title }}">
 <meta name="description" content="{{ $description }}">{{ with .Site.Params.color }}
 <meta name="theme-color" content="{{ . }}">{{ end }}
 <meta name="robots" content="index,follow">
@@ -18,16 +20,21 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#533FEB">
 
-
-<!-- OG tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@tomkonidas">
-<meta name="twitter:creator" content="@tomkonidas">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:title" content="{{ (default .Site.Params.title .Page.Title) }}">
+<meta property="og:title" content="{{ (default .Params.title .Page.Title) }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:image" content="{{ .Site.BaseURL }}og.jpg">
-<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@tomkonidas">
+<meta property="twitter:creator" content="@tomkonidas">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ (default .Params.title .Page.Title) }}">
+<meta property="twitter:description" content="{{ $description }}">
+<meta property="twitter:image" content="{{ .Site.BaseURL }}og.jpg">
 
 <!-- Geo tags -->
 {{ with .Site.Author.location }}
