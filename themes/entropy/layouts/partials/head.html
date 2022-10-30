@@ -1,11 +1,11 @@
 {{ $description := (default .Site.Params.description .Page.Description) }}
 {{ $kind := .Kind }}
-
+{{ $title := (default site.Title .Page.Title) }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{{ with .Params.Title }}{{ if eq $kind "term" }}{{ humanize . }}{{ else }}{{ . }}{{ end}} |> {{ end }}{{ .Site.Title }}</title>
-<meta name="title" content="{{ .Site.Title }}">
+<title>{{ with .Params.Title }}{{ if eq $kind "term" }}{{ humanize . }}{{ else }}{{ . }}{{ end}} |> {{ end }}{{ $title }}</title>
+<meta name="title" content="{{ $title }}">
 <meta name="description" content="{{ $description }}">{{ with .Site.Params.color }}
 <meta name="theme-color" content="{{ . }}">{{ end }}
 <meta name="robots" content="index,follow">
@@ -28,13 +28,13 @@
 <meta property="og:image" content="{{ .Site.BaseURL }}og.jpg">
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:site" content="@tomkonidas">
-<meta property="twitter:creator" content="@tomkonidas">
-<meta property="twitter:url" content="{{ .Permalink }}">
-<meta property="twitter:title" content="{{ (default .Params.title .Page.Title) }}">
-<meta property="twitter:description" content="{{ $description }}">
-<meta property="twitter:image" content="{{ .Site.BaseURL }}og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tomkonidas">
+<meta name="twitter:creator" content="@tomkonidas">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}og.jpg">
 
 <!-- Geo tags -->
 {{ with .Site.Author.location }}
