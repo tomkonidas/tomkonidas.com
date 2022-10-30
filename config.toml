@@ -55,5 +55,5 @@ summaryLength = 42
     weight = 2
 
 [params]
-  description = "BEAM focused software developer from Montréal"
+  description = "BEAM focused software developer from Montréal specializing in real-time distributed systems."
   color = "#533FEB"
