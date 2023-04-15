@@ -14,7 +14,7 @@ About Me
 
 <div>
 
-Hi there 👋
+Hi there 🖖
 
 My name is Tom Konidas and I am a [BEAM](https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)) focused software developer from Montréal.
 
