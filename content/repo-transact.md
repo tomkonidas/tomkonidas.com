@@ -50,7 +50,7 @@ this, and it works great; Exactly as you would expect.
 ```elixir
 defmodule MyApp.Repo do
   use Ecto.Repo,
-    otp_app: :retail,
+    otp_app: :my_app,
     adapter: Ecto.Adapters.Postgres
 
   @doc """
