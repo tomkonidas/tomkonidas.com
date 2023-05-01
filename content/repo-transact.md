@@ -8,7 +8,7 @@ tags: ["elixir", "ecto", "transaction", "multi"]
 
 After reading [Towards Maintainable
 Elixir](https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43)
-by Saša Jurić and hearing about his infamous `Repo.transact` in some of his
+by Saša Jurić and hearing about his famous `Repo.transact` in some of his
 talks, I decided it was time to explore this for myself.
 
 This post takes into account that you (the reader) are aware and know why and
