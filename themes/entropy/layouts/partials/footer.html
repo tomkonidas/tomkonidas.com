@@ -13,9 +13,6 @@
           {{ end }}
           <div class="section__footer">
             <ul class="socials">
-              <li class="social">
-                <a rel="me" href="https://fosstodon.org/@tomkonidas">Mastodon</a>
-              </li>
               {{ range .Site.Author.socials }}
                 <li class="social">
                   <a href="{{ .url }}" class="link" target="_blank" rel="noopener" aria-label="{{ .name }} link">{{ .name }}</a>
