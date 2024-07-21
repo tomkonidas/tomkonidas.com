@@ -19,8 +19,8 @@ summaryLength = 42
   email = "tom@tomkonidas.com"
   biography = ""
   [[author.socials]]
-    name = "Twitter"
-    url = "https://twitter.com/tomkonidas"
+    name = "X"
+    url = "https://x.com/tomkonidas"
   [[author.socials]]
     name = "GitHub"
     url = "https://github.com/tomkonidas"
