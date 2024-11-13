@@ -16,7 +16,7 @@ summaryLength = 42
 
 [author]
   name = "Tom Konidas"
-  email = "tom@tomkonidas.com"
+  email = "tom@konidas.ca"
   biography = ""
   [[author.socials]]
     name = "X"
